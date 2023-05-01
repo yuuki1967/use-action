@@ -1,0 +1,14 @@
+name: Sample Javascript action 2
+on: 
+    workflow_dispatch:
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: yuuki1967/js-action-learning2@v1.0
+        with:
+          who-to-greet: 'Mona the Octocat'
